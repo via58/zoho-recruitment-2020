@@ -5,21 +5,34 @@ int main()
     int i,j,k,n,temp;
     printf("please enter the input \n");
     scanf("%d",&n);
+    n=5;
     temp=n;
-    for(i=0;i<=n;i++)
+    for(k=1;k<=n;k++)
     {
-        
-        for(j=1;j<=n-i;j++)
+        int dif=n-temp;
+        if(dif==0)
         {
-         printf("%d",n);
+        for(i=1;i<=n;i++)
+        {
+        printf("%d",n);
+        }
+        
+         temp=temp-1;
+        }
+        else
+        {
+            printf("%d",n);
+            
+           for(j=2;j<=n;j++)
+           {
+                           printf("%d",temp);
+               
+           }
+           temp=temp-1;
+          
         }
         printf("\n");
-        for(k=1;k<=i;k++)
-        {
-            printf("%d",k);
-        }
-        
-    }
+}
 
     return 0;
 }
