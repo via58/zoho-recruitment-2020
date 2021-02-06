@@ -5,7 +5,6 @@ int main()
     int i,j,k,n,temp;
     printf("please enter the input \n");
     scanf("%d",&n);
-    n=5;
     temp=n;
     for(i=0;i<=n;i++)
     {
